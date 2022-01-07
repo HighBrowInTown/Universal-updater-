@@ -20,7 +20,7 @@ read option
 a) apt update && apt upgrade -y;; 
 b) yum update && yum upgrade -y;;
 c) pacman -Syy;;
-d) zypper update -y
+d) zypper update -y;;
 e) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
 	esac
 echo 
