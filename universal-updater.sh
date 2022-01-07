@@ -20,7 +20,8 @@ read option
 a) apt update && apt upgrade -y;; 
 b) yum update && yum upgrade -y;;
 c) pacman -Syy;;
-d) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
+d) zypper update -y
+e) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
 	esac
 echo 
 echo We have just update your application.
