@@ -16,6 +16,7 @@ echo 'c = arch linux'
 echo 'd = opensuse'
 echo 'e = gentoo'
 echo 'f = flatpak'
+echo 'g = snap'
 echo
 read option
    case $option in
@@ -25,7 +26,7 @@ c) pacman -Syy;;
 d) zypper update -y;;
 e) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
 f) flatpak update -y;;
-g) snap refresh
+g) snap refresh;;
  esac
 echo 
 echo Update complete !!
