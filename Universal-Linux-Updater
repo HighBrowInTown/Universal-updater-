@@ -9,12 +9,13 @@ echo
 if [ $decesion == "yes" ]
 then 
 echo
-echo please choose  your 'type' of operating system from the given below options
+echo please choose  your 'type' of operating system and if you use any other package manager from the given below options
 echo 'a = debian based linux'
 echo 'b = redhat based linux'
 echo 'c = arch linux'
 echo 'd = opensuse'
 echo 'e = gentoo'
+echo 'f = flatpak'
 echo
 read option
    case $option in
@@ -23,7 +24,9 @@ b) yum update && yum upgrade -y;;
 c) pacman -Syy;;
 d) zypper update -y;;
 e) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
-   esac
+f) flatpak update -y;;
+g) snap refresh
+ esac
 echo 
 echo Update complete !!
 echo
