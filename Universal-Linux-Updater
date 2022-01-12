@@ -22,7 +22,7 @@ read option
    case $option in
 a) apt update && apt upgrade -y;; 
 b) yum update && yum upgrade -y;;
-c) pacman -Syy;;
+c) pacman -Syu;;
 d) zypper update -y;;
 e) emaint --auto sync && emerge --ask --verbose --update --deep --newuse @world ;;
 f) flatpak update -y;;
